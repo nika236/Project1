@@ -1,0 +1,8 @@
+<h1>New hotel</h1>
+<%= render 'shared/error', obj: @hotel %>
+<%= render "form", obj: @hotel %>
+<br>
+
+<div>
+  <%= link_to "Back to hotels", hotels_path ,class: "btn btn-secondary mt-2" %>
+</div>

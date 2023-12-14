@@ -1,0 +1,15 @@
+<h1>Hotels</h1>
+
+
+<% @hotels.each do |hotel| %>
+  <div id="<%= dom_id hotel %>" class="card mt-3">
+    <div class="card-body ">
+      <%= render hotel %>
+      <br/>
+      <%= link_to "Show this hotels", hotel, class: "btn btn-secondary btn-sm" %>
+    </div>
+  </div>
+
+<% end %>
+
+<%= link_to "New hotels", new_hotel_path, class: "btn btn-success mt-2" %>

@@ -1,0 +1,10 @@
+<h1>Editing hotel</h1>
+<%= render "shared/error", obj: @hotel %>
+<%= render "form", obj: @hotel %>
+
+<br>
+
+<div>
+  <%= link_to "Show this hotels", @hotel %> |
+  <%= link_to "Back to hotels", hotels_path %>
+</div>
