@@ -20,7 +20,7 @@ class HotelsController < ApplicationController
 
     respond_to do |format|
       if hotel_create.create_hotel
-        format.html { redirect_to hotel_url(hotel_create.hotel.id), notice: "Hotel was successfully created." }
+        format.html { redirect_to new_hotel_room_path(hotel_create.hotel.id), notice: "Hotel was successfully created." }
         format.json { render :show, status: :created, location: hotel_create.hotel.id }
       else
         @hotel = hotel_create.hotel
